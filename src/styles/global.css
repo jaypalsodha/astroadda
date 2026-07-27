@@ -8,3 +8,56 @@ html {
 body {
   @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950;
 }
+
+.theme-cosmic-royal {
+  --accent: #8b5cf6;
+  --accent-strong: #6d28d9;
+  --accent-soft: rgba(139, 92, 246, 0.16);
+  --accent-glow: rgba(167, 139, 250, 0.18);
+  --surface: #0f172a;
+  --surface-2: #111827;
+  --border: rgba(192, 132, 252, 0.26);
+}
+
+.theme-cosmic-royal body {
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+.theme-cosmic-royal .text-amber-400,
+.theme-cosmic-royal .text-amber-300,
+.theme-cosmic-royal .text-amber-500 {
+  color: var(--accent) !important;
+}
+
+.theme-cosmic-royal .bg-amber-500,
+.theme-cosmic-royal .from-amber-500,
+.theme-cosmic-royal .to-amber-600,
+.theme-cosmic-royal .from-amber-300,
+.theme-cosmic-royal .via-amber-400,
+.theme-cosmic-royal .to-amber-500,
+.theme-cosmic-royal .border-amber-500\/30,
+.theme-cosmic-royal .border-amber-500\/40 {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.theme-cosmic-royal .bg-amber-500\/10,
+.theme-cosmic-royal .bg-amber-500\/20,
+.theme-cosmic-royal .bg-amber-500\/30 {
+  background-color: var(--accent-soft) !important;
+}
+
+.theme-cosmic-royal .shadow-amber-500\/20 {
+  box-shadow: 0 0 0 1px var(--accent-glow), 0 10px 35px rgba(139, 92, 246, 0.2);
+}
+
+.theme-cosmic-royal .border-slate-800,
+.theme-cosmic-royal .border-slate-800\/80,
+.theme-cosmic-royal .border-slate-900 {
+  border-color: var(--border) !important;
+}
+
+.theme-cosmic-royal .bg-\[radial-gradient\(ellipse_at_top,_var\(--tw-gradient-stops\)\)\] {
+  background-image: radial-gradient(ellipse at top, rgba(139, 92, 246, 0.18), rgba(2, 6, 23, 0.95));
+}
