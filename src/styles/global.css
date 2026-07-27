@@ -8,3 +8,54 @@ html {
 body {
   @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950;
 }
+
+.theme-celestial-bronze {
+  --accent: #d4a373;
+  --accent-strong: #b9773f;
+  --accent-soft: rgba(212, 163, 115, 0.16);
+  --accent-glow: rgba(212, 163, 115, 0.24);
+  --border: rgba(212, 163, 115, 0.24);
+}
+
+.theme-celestial-bronze body {
+  background-color: #120d08;
+  color: #f8efe6;
+}
+
+.theme-celestial-bronze .text-amber-400,
+.theme-celestial-bronze .text-amber-300,
+.theme-celestial-bronze .text-amber-500 {
+  color: var(--accent) !important;
+}
+
+.theme-celestial-bronze .bg-amber-500,
+.theme-celestial-bronze .from-amber-500,
+.theme-celestial-bronze .to-amber-600,
+.theme-celestial-bronze .from-amber-300,
+.theme-celestial-bronze .via-amber-400,
+.theme-celestial-bronze .to-amber-500,
+.theme-celestial-bronze .border-amber-500\/30,
+.theme-celestial-bronze .border-amber-500\/40 {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.theme-celestial-bronze .bg-amber-500\/10,
+.theme-celestial-bronze .bg-amber-500\/20,
+.theme-celestial-bronze .bg-amber-500\/30 {
+  background-color: var(--accent-soft) !important;
+}
+
+.theme-celestial-bronze .shadow-amber-500\/20 {
+  box-shadow: 0 0 0 1px var(--accent-glow), 0 12px 35px rgba(212, 163, 115, 0.2);
+}
+
+.theme-celestial-bronze .border-slate-800,
+.theme-celestial-bronze .border-slate-800\/80,
+.theme-celestial-bronze .border-slate-900 {
+  border-color: var(--border) !important;
+}
+
+.theme-celestial-bronze .bg-\[radial-gradient\(ellipse_at_top,_var\(--tw-gradient-stops\)\)\] {
+  background-image: radial-gradient(ellipse at top, rgba(212, 163, 115, 0.2), rgba(18, 13, 8, 0.95));
+}
