@@ -8,3 +8,54 @@ html {
 body {
   @apply bg-slate-950 text-slate-100 font-sans antialiased selection:bg-amber-500 selection:text-slate-950;
 }
+
+.theme-moonlit-ivory {
+  --accent: #f5c973;
+  --accent-strong: #e0a93b;
+  --accent-soft: rgba(245, 201, 115, 0.16);
+  --accent-glow: rgba(245, 201, 115, 0.24);
+  --border: rgba(245, 201, 115, 0.24);
+}
+
+.theme-moonlit-ivory body {
+  background-color: #0b0a09;
+  color: #fdf7ed;
+}
+
+.theme-moonlit-ivory .text-amber-400,
+.theme-moonlit-ivory .text-amber-300,
+.theme-moonlit-ivory .text-amber-500 {
+  color: var(--accent) !important;
+}
+
+.theme-moonlit-ivory .bg-amber-500,
+.theme-moonlit-ivory .from-amber-500,
+.theme-moonlit-ivory .to-amber-600,
+.theme-moonlit-ivory .from-amber-300,
+.theme-moonlit-ivory .via-amber-400,
+.theme-moonlit-ivory .to-amber-500,
+.theme-moonlit-ivory .border-amber-500\/30,
+.theme-moonlit-ivory .border-amber-500\/40 {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.theme-moonlit-ivory .bg-amber-500\/10,
+.theme-moonlit-ivory .bg-amber-500\/20,
+.theme-moonlit-ivory .bg-amber-500\/30 {
+  background-color: var(--accent-soft) !important;
+}
+
+.theme-moonlit-ivory .shadow-amber-500\/20 {
+  box-shadow: 0 0 0 1px var(--accent-glow), 0 12px 35px rgba(245, 201, 115, 0.2);
+}
+
+.theme-moonlit-ivory .border-slate-800,
+.theme-moonlit-ivory .border-slate-800\/80,
+.theme-moonlit-ivory .border-slate-900 {
+  border-color: var(--border) !important;
+}
+
+.theme-moonlit-ivory .bg-\[radial-gradient\(ellipse_at_top,_var\(--tw-gradient-stops\)\)\] {
+  background-image: radial-gradient(ellipse at top, rgba(245, 201, 115, 0.2), rgba(11, 10, 9, 0.95));
+}
